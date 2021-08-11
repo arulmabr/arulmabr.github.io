@@ -2,10 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://arulmabr.github.io/posts/2020-12-01-r-rmarkdown/</loc>
+    <loc>https://arulmabr.github.io/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
   </url><url>
-    <loc>https://arulmabr.github.io/</loc>
+    <loc>https://arulmabr.github.io/posts/2020-12-01-r-rmarkdown/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
   </url><url>
     <loc>https://arulmabr.github.io/tags/plot/</loc>
@@ -49,9 +49,6 @@
   </url><url>
     <loc>https://arulmabr.github.io/posts/post-6/</loc>
     <lastmod>2018-03-18T12:13:36+05:30</lastmod>
-  </url><url>
-    <loc>https://arulmabr.github.io/posts/post-4/</loc>
-    <lastmod>2018-03-18T12:13:35+05:30</lastmod>
   </url><url>
     <loc>https://arulmabr.github.io/posts/post-3/</loc>
     <lastmod>2018-03-18T12:13:32+05:30</lastmod>
