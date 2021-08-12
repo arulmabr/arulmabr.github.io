@@ -23,9 +23,6 @@
     <loc>https://arulmabr.github.io/tags/</loc>
     <lastmod>2020-12-01T21:13:14-05:00</lastmod>
   </url><url>
-    <loc>https://arulmabr.github.io/about/</loc>
-    <lastmod>2019-04-19T21:37:58+05:30</lastmod>
-  </url><url>
     <loc>https://arulmabr.github.io/posts/post-7/</loc>
     <lastmod>2018-03-18T12:13:38+05:30</lastmod>
   </url><url>
@@ -55,5 +52,7 @@
   </url><url>
     <loc>https://arulmabr.github.io/tags/todo/</loc>
     <lastmod>2018-03-18T02:01:58+05:30</lastmod>
+  </url><url>
+    <loc>https://arulmabr.github.io/about/</loc>
   </url>
 </urlset>
