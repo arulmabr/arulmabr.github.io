@@ -40,5 +40,14 @@ I&amp;rsquo;m Arul Murugan, a final year Chemical Engineering undergrad at BITS 
 I follow Cricket and watch a lot of Movies and TV-Series.</description>
     </item>
     
+    <item>
+      <title>Contact</title>
+      <link>https://arulmabr.github.io/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://arulmabr.github.io/contact/</guid>
+      <description>Just drop me an email at arulmabr@gmail.com</description>
+    </item>
+    
   </channel>
 </rss>
