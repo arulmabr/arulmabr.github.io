@@ -2,18 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Arul Murugan</title>
-    <link>https://arulmabr.github.io/posts/</link>
+    <link>https://www.arulmurugan.me/posts/</link>
     <description>Recent content in Posts on Arul Murugan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright</copyright>
-    <lastBuildDate>Mon, 10 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://arulmabr.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.arulmurugan.me/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>test post</title>
+      <link>https://www.arulmurugan.me/posts/2021-08-13-test-post/</link>
+      <pubDate>Fri, 13 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.arulmurugan.me/posts/2021-08-13-test-post/</guid>
+      <description>This is a testttt posssst</description>
+    </item>
+    
     <item>
       <title>Game Theory and its essence in Businesses</title>
-      <link>https://arulmabr.github.io/posts/2020-08-10-game-theory-and-its-essence-in-businesses/</link>
+      <link>https://www.arulmurugan.me/posts/2020-08-10-game-theory-and-its-essence-in-businesses/</link>
       <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://arulmabr.github.io/posts/2020-08-10-game-theory-and-its-essence-in-businesses/</guid>
+      <guid>https://www.arulmurugan.me/posts/2020-08-10-game-theory-and-its-essence-in-businesses/</guid>
       <description>Note: I wrote this article for my college&amp;rsquo;s Consulting Club and posted it here initially. This post is reproduced from there.
 Have you ever wondered how the clown prince — — The Joker from The Dark Knight(2008), was able to craft mayhem and chaos so strategically that a single crazy guy, who even gave the Batman a big run for his money.
 I’d say because he’s one of the most skilled villains in being a schemer, a tactician and not to forget this, a great manipulator with finesse in playing mind games.</description>
@@ -21,10 +30,10 @@ I’d say because he’s one of the most skilled villains in being a schemer, a 
     
     <item>
       <title>The tweet that wiped off $14 billion.</title>
-      <link>https://arulmabr.github.io/posts/2020-05-01-the-tweet-that-wiped-off-14-billion/</link>
+      <link>https://www.arulmurugan.me/posts/2020-05-01-the-tweet-that-wiped-off-14-billion/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://arulmabr.github.io/posts/2020-05-01-the-tweet-that-wiped-off-14-billion/</guid>
+      <guid>https://www.arulmurugan.me/posts/2020-05-01-the-tweet-that-wiped-off-14-billion/</guid>
       <description>Note: This post was initially written for my college&amp;rsquo;s Finance Club as an Instagram post, later reproduced in this blog.
  The Cause   The tweet that wiped off $14 billion. Yesterday, Elon Musk tweeted that shares of his company &amp;ldquo;Tesla&amp;rdquo; had been valued too high. Ergo, within moments there was a downhill and it went as much as 13% down. Why would he degrade his own venture? Maybe he was tripping?</description>
     </item>
