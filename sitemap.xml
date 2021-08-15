@@ -1,65 +1,36 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-<url>
-  <loc>https://www.arulmurugan.me/</loc>
-  <lastmod>2021-08-15T08:11:34+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.arulmurugan.me/posts/</loc>
-  <lastmod>2021-08-15T08:11:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.arulmurugan.me/about/</loc>
-  <lastmod>2021-08-15T08:11:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.arulmurugan.me/tags/</loc>
-  <lastmod>2021-08-15T08:11:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.arulmurugan.me/about_files/arul_cv.pdf</loc>
-  <lastmod>2021-08-15T08:11:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.arulmurugan.me/contact/</loc>
-  <lastmod>2021-08-15T08:11:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.arulmurugan.me/posts/2020-08-10-game-theory-and-its-essence-in-businesses/</loc>
-  <lastmod>2021-08-15T08:11:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.arulmurugan.me/posts/2020-05-01-the-tweet-that-wiped-off-14-billion/</loc>
-  <lastmod>2021-08-15T08:11:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.arulmurugan.me/tags/game_theory/</loc>
-  <lastmod>2021-08-15T08:11:34+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.arulmurugan.me/tags/finance/</loc>
-  <lastmod>2021-08-15T08:11:34+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.arulmurugan.me/tags/stock_market/</loc>
-  <lastmod>2021-08-15T08:11:34+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-
-
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://arulmabr.github.io/</loc>
+    <lastmod>2021-08-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://arulmabr.github.io/posts/</loc>
+    <lastmod>2021-08-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://arulmabr.github.io/posts/2021-08-13-test-post/</loc>
+    <lastmod>2021-08-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://arulmabr.github.io/posts/2020-08-10-game-theory-and-its-essence-in-businesses/</loc>
+    <lastmod>2020-08-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://arulmabr.github.io/tags/game_theory/</loc>
+    <lastmod>2020-08-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://arulmabr.github.io/tags/</loc>
+    <lastmod>2020-08-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://arulmabr.github.io/tags/finance/</loc>
+    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://arulmabr.github.io/tags/stock_market/</loc>
+    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://arulmabr.github.io/posts/2020-05-01-the-tweet-that-wiped-off-14-billion/</loc>
+    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://arulmabr.github.io/about/</loc>
+  </url><url>
+    <loc>https://arulmabr.github.io/contact/</loc>
+  </url>
 </urlset>
