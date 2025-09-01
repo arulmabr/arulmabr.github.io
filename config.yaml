@@ -72,9 +72,8 @@ params:
 
   # home-info mode
   homeInfoParams:
-    enabled: true
     Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
+    Content: Thanks for dropping by! I'm Arul Murugan, currently a masters student at the School of Information, UC Berkeley.
 
   socialIcons:
     - name: x
@@ -83,6 +82,8 @@ params:
       url: "https://github.com/arulmabr"
     - name: linkedin
       url: "https://www.linkedin.com/in/-arul-murugan/"
+    - name: email
+      url: "mailto:mail@arulmurugan.me"
 
   analytics:
     google:
@@ -92,11 +93,6 @@ params:
     hidden: true # hide everywhere but not in structured data
     hiddenInList: true # hide on list pages and home
     hiddenInSingle: true # hide on single page
-
-  editPost:
-    URL: "https://github.com/<path_to_repo>/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
 
   # for search
   # https://fusejs.io/api/options.html
@@ -109,20 +105,29 @@ params:
     minMatchCharLength: 0
     limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
     keys: ["title", "permalink", "summary", "content"]
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
 menu:
   main:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 10
     - identifier: categories
       name: categories
       url: /categories/
-      weight: 10
+      weight: 20
     - identifier: tags
       name: tags
       url: /tags/
-      weight: 20
+      weight: 30
     - identifier: example
       name: example.org
       url: https://example.org
-      weight: 30
+      weight: 40
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
