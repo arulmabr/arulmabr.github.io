@@ -9,6 +9,8 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
+googleAnalytics: G-YQPXTZWBKV
+
 minify:
   disableXML: true
   minifyOutput: true
@@ -87,7 +89,7 @@ params:
 
   analytics:
     google:
-      SiteVerificationTag: "G-JRQC6MX7FX"
+      SiteVerificationTag: "G-YQPXTZWBKV"
 
   cover:
     hidden: true # hide everywhere but not in structured data
