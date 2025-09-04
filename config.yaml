@@ -20,17 +20,17 @@ params:
   keywords: [Blog, Portfolio, PaperMod]
   author: Me
   # author: ["Me", "You"] # multiple authors
-  images: ["/images/berkeley.jpg"]
+  images: ["/images/arul.jpg"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
 
-  ShowReadingTime: true
+  ShowReadingTime: false
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: false
-  ShowWordCount: true
+  ShowWordCount: false
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
   disableSpecial1stPost: false
@@ -73,7 +73,7 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Hi there \U0001F44B"
-    Content: Thanks for dropping by! I'm Arul Murugan, currently a masters student at the School of Information, UC Berkeley.
+    Content: Thanks for dropping by! I'm Arul Murugan, currently a masters student at UC Berkeley.
 
   socialIcons:
     - name: x
@@ -116,21 +116,28 @@ menu:
       name: About
       url: /about/
       weight: 10
-    - identifier: categories
-      name: categories
-      url: /categories/
+    - identifier: Blog
+      name: Blog
+      url: /blog/
       weight: 20
-    - identifier: tags
-      name: tags
-      url: /tags/
+    - identifier: research
+      name: Research
+      url: /research/
       weight: 30
-    - identifier: example
-      name: example.org
-      url: https://example.org
+    - identifier: resume
+      name: Resume
+      url: /resume/
       weight: 40
+    - identifier: contact
+      name: Contact
+      url: /contact/
+      weight: 50
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
+  goldmark:
+    renderer:
+      unsafe: true
   highlight:
     noClasses: false
     # anchorLineNos: true
