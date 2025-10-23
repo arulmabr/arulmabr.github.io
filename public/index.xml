@@ -2,51 +2,51 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Arul Murugan</title>
-    <link>http://localhost:1313/</link>
+    <link>https://arulmurugan.me/</link>
     <description>Recent content on Arul Murugan</description>
     <image>
       <title>Arul Murugan</title>
-      <url>http://localhost:1313/images/arul.jpg</url>
-      <link>http://localhost:1313/images/arul.jpg</link>
+      <url>https://arulmurugan.me/images/arul.jpg</url>
+      <link>https://arulmurugan.me/images/arul.jpg</link>
     </image>
     <generator>Hugo -- 0.149.0</generator>
     <language>en</language>
     <lastBuildDate>Sat, 06 Sep 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://arulmurugan.me/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Theorizing with LLMs</title>
-      <link>http://localhost:1313/posts/streetlight-llms/</link>
+      <link>https://arulmurugan.me/posts/streetlight-llms/</link>
       <pubDate>Sat, 06 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/streetlight-llms/</guid>
+      <guid>https://arulmurugan.me/posts/streetlight-llms/</guid>
       <description>&lt;p&gt;This is the first every paper that I have contributed to, we did this exactly an year back.&lt;/p&gt;
 &lt;p&gt;Check more about it here: &lt;a href=&#34;https://arulmurugan.me/theorizing_with_llms/&#34;&gt;arulmurugan.me/theorizing_with_llms/&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>About</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://arulmurugan.me/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>https://arulmurugan.me/about/</guid>
       <description>about</description>
     </item>
     <item>
       <title>Contact</title>
-      <link>http://localhost:1313/contact/</link>
+      <link>https://arulmurugan.me/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/contact/</guid>
+      <guid>https://arulmurugan.me/contact/</guid>
       <description>Contact me</description>
     </item>
     <item>
       <title>Research</title>
-      <link>http://localhost:1313/research/</link>
+      <link>https://arulmurugan.me/research/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/research/</guid>
+      <guid>https://arulmurugan.me/research/</guid>
       <description>Research</description>
     </item>
     <item>
       <title>Resume</title>
-      <link>http://localhost:1313/resume/</link>
+      <link>https://arulmurugan.me/resume/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/resume/</guid>
+      <guid>https://arulmurugan.me/resume/</guid>
       <description>my resume</description>
     </item>
   </channel>
