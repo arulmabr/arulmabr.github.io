@@ -29,7 +29,7 @@ params:
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
+  ShowCodeCopyButtons: true
   ShowWordCount: false
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
@@ -73,7 +73,7 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Hi there \U0001F44B"
-    Content: Thanks for dropping by! I'm Arul Murugan, currently a masters student at UC Berkeley.
+    Content: Thanks for dropping by! I'm Arul Murugan, currently a masters student at UC Berkeley. This website is work in progress, you can expect it to be ready in a week or two.
 
   socialIcons:
     - name: x
