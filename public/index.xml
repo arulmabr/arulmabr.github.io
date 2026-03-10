@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- 0.152.1</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 20 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://arulmurugan.me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Interpreting and Steering LLM Agents for Social Simulations</title>
+      <link>https://arulmurugan.me/research/interpreting-steering-llm-agents/</link>
+      <pubDate>Sun, 15 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arulmurugan.me/research/interpreting-steering-llm-agents/</guid>
+      <description>We compare prompting, sparse autoencoders, and linear probes for interpreting and controlling LLM agent behavior in social science simulations. SAE-based steering outperforms prompting, offering fine-grained, predictable control over preferences and capabilities.</description>
+    </item>
     <item>
       <title>Sybil-Resilient Preference Aggregation for RLHF</title>
       <link>https://arulmurugan.me/research/sybil-resilient-rlhf/</link>
