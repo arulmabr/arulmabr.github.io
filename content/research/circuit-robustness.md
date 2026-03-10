@@ -1,11 +1,8 @@
 ---
-title: "Research"
-layout: "research"
-url: "/research/"
-summary: Research
+title: "Probing Circuit Robustness: How Syntactic Form Shapes Neural Circuit Activation in LLMs"
+date: 2025-12-15
+summary: "We investigate whether neural circuits in LLMs remain stable under semantic-preserving paraphrases. Our central finding: syntactic form, not semantic content, is the primary determinant of circuit activation."
 ---
-
-## Probing Circuit Robustness: How Syntactic Form Shapes Neural Circuit Activation in LLMs
 
 **Arul Murugan** | UC Berkeley | Fall 2025 | INFO 256: Applied NLP
 
@@ -46,11 +43,3 @@ We then measured circuit stability using three complementary metrics: **Weighted
 These findings have direct implications for AI safety. If adversarial framing techniques can reroute model processing through entirely different circuits, then safety mechanisms that monitor specific neural pathways could be systematically bypassed. Robustness evaluations that only test output behavior may miss fundamental representational brittleness.
 
 More broadly, the dominance of syntactic form over semantic content in circuit activation suggests that current models are far more sensitive to *how* something is said than *what* is being said -- at least at the circuit level.
-
----
-
-## Theorizing with LLMs
-
-This is the first every paper that I have contributed to, we did this exactly an year back.
-
-Check more about it here: [arulmurugan.me/theorizing_with_llms/](https://arulmurugan.me/theorizing_with_llms/)
