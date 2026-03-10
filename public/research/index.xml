@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- 0.152.1</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 15 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 20 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://arulmurugan.me/research/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sybil-Resilient Preference Aggregation for RLHF</title>
+      <link>https://arulmurugan.me/research/sybil-resilient-rlhf/</link>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://arulmurugan.me/research/sybil-resilient-rlhf/</guid>
+      <description>We present the first formal framework for defending RLHF preference aggregation against sybil attacks. We prove standard Bradley-Terry is not sybil-safe, propose SQ-BT as a defense, and characterize a tight, fundamental safety-liveness tradeoff.</description>
+    </item>
     <item>
       <title>Probing Circuit Robustness: How Syntactic Form Shapes Neural Circuit Activation in LLMs</title>
       <link>https://arulmurugan.me/research/circuit-robustness/</link>
