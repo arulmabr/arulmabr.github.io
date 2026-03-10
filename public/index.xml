@@ -9,18 +9,9 @@
       <url>https://arulmurugan.me/images/arul.jpg</url>
       <link>https://arulmurugan.me/images/arul.jpg</link>
     </image>
-    <generator>Hugo -- 0.149.0</generator>
+    <generator>Hugo -- 0.152.1</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 06 Sep 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://arulmurugan.me/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Theorizing with LLMs</title>
-      <link>https://arulmurugan.me/posts/streetlight-llms/</link>
-      <pubDate>Sat, 06 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://arulmurugan.me/posts/streetlight-llms/</guid>
-      <description>&lt;p&gt;This is the first every paper that I have contributed to, we did this exactly an year back.&lt;/p&gt;
-&lt;p&gt;Check more about it here: &lt;a href=&#34;https://arulmurugan.me/theorizing_with_llms/&#34;&gt;arulmurugan.me/theorizing_with_llms/&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
     <item>
       <title>About</title>
       <link>https://arulmurugan.me/about/</link>
