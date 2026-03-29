@@ -1,0 +1,26 @@
+{{- define "main" }}
+
+<article class="post-single">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+    <h1 class="post-title entry-hint-parent">
+      {{ .Title }}
+    </h1>
+  </header>
+
+  <div class="post-content">
+    <p>I'd love to hear from you! Whether you have a question, want to collaborate, or just want to say hello, feel free to reach out. I'm always happy to connect.</p>
+    <p>Drop me an email at <a href="mailto:mail@arulmurugan.me">mail@arulmurugan.me</a> and I'll get back to you as soon as I can.</p>
+  </div>
+
+  {{- if .Content }}
+  <div class="post-content">
+    {{- if not (.Param "disableAnchoredHeadings") }}
+    {{- partial "anchored_headings.html" .Content -}}
+    {{- else }}{{ .Content }}{{ end }}
+  </div>
+  {{- end }}
+
+</article>
+
+{{- end }}{{/* end main */}}
