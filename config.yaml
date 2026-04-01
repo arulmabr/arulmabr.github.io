@@ -82,6 +82,8 @@ params:
       url: "https://github.com/arulmabr"
     - name: linkedin
       url: "https://www.linkedin.com/in/-arul-murugan/"
+    - name: googlescholar
+      url: "https://scholar.google.com/citations?user=7rHwscYAAAAJ&hl=en"
     - name: email
       url: "mailto:mail@arulmurugan.me"
 
