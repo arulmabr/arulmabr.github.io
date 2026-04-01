@@ -73,7 +73,7 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Hi there \U0001F44B"
-    Content: Thanks for dropping by! I'm Arul Murugan, currently a masters student at UC Berkeley. This website is work in progress, you can expect it to be ready in a week or two.
+    Content: Thanks for dropping by! I'm Arul Murugan, currently a masters student at UC Berkeley.
 
   socialIcons:
     - name: x
