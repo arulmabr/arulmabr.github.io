@@ -1,5 +1,5 @@
 ---
-title: "Theorizing with LLMs"
+title: "Simulating Strategic Interactions with AI Agents"
 date: 2025-09-06
 summary: "This is the first ever paper that I have contributed to, we did this exactly an year back."
 ---
