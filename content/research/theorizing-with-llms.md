@@ -13,4 +13,6 @@ We introduce a framework for using LLM-based AI agents as synthetic subjects in 
 - [Explore the project page](https://arulmurugan.me/theorizing_with_llms/)
 - [View the code on GitHub](https://github.com/arulmabr/theorizing_with_llms)
 
+An earlier version, *Theorizing with Large Language Models*, circulated as [NBER Working Paper No. 33033](https://www.nber.org/papers/w33033).
+
 **Citation:** Tranchero, M., Brenninkmeijer, C.-F., Murugan, A., & Nagaraj, A. (2026). Simulating strategic interactions with AI agents. *Strategic Management Journal*. [https://doi.org/10.1002/smj.70112](https://doi.org/10.1002/smj.70112)
