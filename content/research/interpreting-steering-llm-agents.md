@@ -1,47 +1,49 @@
 ---
 title: "Interpreting and Steering LLM Agents for Social Simulations"
-date: 2026-02-15
-summary: "We compare prompting, sparse autoencoders, and linear probes for interpreting and controlling LLM agent behavior in social science simulations. SAE-based steering outperforms prompting, offering fine-grained, predictable control over preferences and capabilities."
+date: 2026-09-14
+summary: "We compare prompting, sparse autoencoders, and linear probes for interpreting and steering LLM agents in social simulations. SAEs help inspect internal features, probes offer calibrated control, and stronger prompting is competitive or better on some tasks."
 ---
 
-**Jiayue Gaveal Fan\*, Arul Murugan\*, Shreyas Krishnan, Abhishek Nagaraj** | UC Berkeley | February 2026
+**Jiayue Gaveal Fan, Arul Murugan, Shreyas Krishnan, Abhishek Nagaraj** | UC Berkeley | Preprint, September 2026
 
 [Preprint on arXiv](https://arxiv.org/abs/2609.16436) | [PDF](https://arxiv.org/pdf/2609.16436)
 
-LLM-powered agents are becoming a serious tool for computational social science -- running simulated experiments at a fraction of the cost of human studies. But there's a fundamental problem: these agents are black boxes. Social scientists need two things from their experimental subjects: **interpretability** (why did the agent behave that way?) and **controllability** (can we reliably shift behavior along specific dimensions?). Prompting alone falls short on both counts.
+LLM-powered agents let social scientists run simulated experiments at low cost, but their behavior can be difficult to interpret and control. If an agent becomes more willing to take risks, what changed inside the model? Can we adjust that tendency gradually and measure its effect on the agent's choices?
 
-This paper asks: can we do better by going *inside* the model?
+This paper compares three ways to study those questions: changing the prompt, inspecting and modifying features with **sparse autoencoders (SAEs)**, and learning directions for specific traits with **linear probes**. The results distinguish two goals: understanding internal representations and steering observable behavior. Which method works best depends on the task and the prompting strategy.
 
 ### The Setup
 
-We ran four classic social science experiments on **Llama-3.3-70B-Instruct** agents, spanning two core dimensions of human behavior:
+Our main experiments use **Llama-3.3-70B-Instruct** across four economic and creative tasks:
 
 **Preferences:**
-- **Lottery Game** (risk) -- agents choose between a guaranteed payout and a risky gamble with varying expected values. Classic paradigm from decision theory
-- **Ultimatum Game** (altruism) -- agents decide whether to accept or reject unfair offers. Tests the tension between rationality and fairness
+
+- **Lottery game:** choose between a guaranteed payout and a gamble as the potential reward changes.
+- **Ultimatum game:** accept or reject offers to split a fixed sum. We use acceptance behavior as the paper's operational measure of altruism.
 
 **Capabilities:**
-- **Divergent Creativity** -- "list as many uses for a brick as you can" (Torrance-style)
-- **Product Innovation** -- "list improvements for a stapler"
 
-For each task, we compared three methods of understanding and steering agent behavior: **(1) prompting** (persona manipulation), **(2) SAE-based steering** (sparse autoencoders from Goodfire, modifying internal feature activations), and **(3) probe-based steering** (logistic regression probes on hidden states, using the learned direction to push behavior).
+- **Divergent creativity:** generate uses for a brick.
+- **Product innovation:** propose improvements to a stapler.
+
+The prompting comparisons include persona instructions, chain-of-thought, and, where available, few-shot examples. SAE steering uses Goodfire's features at layer 50; probe steering uses logistic regression directions learned from layer 48 activations. The appendix also tests the probe pipeline on **Qwen-2-7B-Instruct** and examines transfer across object prompts.
 
 ### What We Found
 
-**Interpretability: SAEs reveal the behavioral codes.** Using SAEs trained on layer 50 of Llama-3.3-70B, we decomposed agent activations into interpretable features. The results confirm that agents engage meaningful internal mechanisms: lottery game agents consistently activate features like "probability-based decision making with explicit numerical comparisons" and "calculated risk-taking behavior." Ultimatum game agents light up "economic tradeoffs and payoff structures" and "game theory concepts involving cooperation versus competition." These aren't post-hoc rationalizations -- they're the actual computational features driving behavior.
+**SAEs make internal representations easier to inspect.** Active features relate to probability comparisons in the lottery game, economic tradeoffs in the ultimatum game, and brainstorming in the creative tasks. These features provide clues for developing and testing hypotheses about model behavior. An interpretable feature label alone does not establish a complete causal mechanism, and some features reflect linguistic or task-formatting patterns.
 
-**Controllability: SAE steering beats prompting.** This is the headline result. Prompting produces unpredictable, all-or-nothing effects -- saying "barely risky" in a persona has zero effect, while "slightly risky" makes agents take extreme risks at absurdly low rewards. SAE steering, by contrast, produces smooth, dose-dependent behavioral shifts. Moderate feature boosting creates gradual transitions; stronger boosting creates sharper but still controlled transitions. You get a dial, not a light switch.
+**Preference control is strongest in the lottery task.** SAE steering produces more gradual changes than basic risk-persona prompts. Calibrated probes move the lottery switching point -- the reward at which the agent chooses the gamble half the time -- across approximately **30 to 200 tokens**, with about **2 tokens of mean absolute error** relative to the targets. Stronger prompting does not provide comparable graded risk control in these experiments. In the ultimatum game, however, few-shot chain-of-thought prompting can itself shift acceptance thresholds gradually, narrowing the advantage of internal steering.
 
-**Probes offer efficient, precise control for known traits.** Linear probes trained on just hundreds of examples achieve 82% classification accuracy on preference dimensions and enable fine-grained behavioral targeting. In the lottery game, calibrating the probe steering strength lets you shift the risk-taking threshold continuously from ~30 to ~180 tokens. The control is monotonic and predictable. For creativity tasks, probes achieve meaningful but partial control -- scores shift from ~3.9 to ~7.7 on a 10-point scale, with diminishing returns at extremes.
+**Stronger prompting performs better on the creativity comparisons.** With outputs scored by five LLM judges, SAE steering does not improve the brick-task mean over baseline and produces a modest gain on stapler improvements. Stronger prompting outperforms SAE steering on brick and slightly exceeds it on stapler. The evaluations score fluency, flexibility, originality, and elaboration, with conditions hidden from judges and instructions to prioritize idea quality over response length.
 
-**Prompting is the weakest method.** Prompt-based personas generate narrative explanations that reflect what agents *say* rather than what they *compute*. The behaviors are less stable, less interpretable, and less controllable. Human instructions may simply not align with how models internally represent and process those instructions.
+**Probes offer calibrated but partial control of creativity.** In the separate probe-calibration experiment, the brick task's mean GPT-5 score moves from approximately **4.0 to 8.2 out of 10**. Higher targets become harder to reach. This is a result about controlling a measured score; it does not establish a general increase in human creativity or superiority to the strongest prompts. These GPT-5 scores are distinct from the five-judge comparisons above.
 
 ### The Practical Takeaway
 
-Each method has its place:
+The methods serve different research needs:
 
-- **SAEs** are best for *inductive* research -- exploring what features drive behavior, discovering unexpected mechanisms, and steering complex multi-dimensional traits like creativity
-- **Probes** are best for *deductive* research -- when you know what trait you want to measure and control, and need computational efficiency
-- **Prompting** remains useful as a baseline and for quick prototyping, but should not be relied on for precise experimental control
+- **SAEs** help explore internal features and generate hypotheses about behavior.
+- **Probes** provide efficient, calibrated interventions when a trait can be captured by a learned direction.
+- **Prompting** is easy to deploy and should be a strong comparison condition, including examples and reasoning instructions where appropriate.
 
-The broader implication: social scientists using LLM agents don't have to treat them as inscrutable black boxes. Mechanistic and representational interpretability tools can open the box, giving researchers the experimental control they need for rigorous simulation-based theory building.
+These experiments concern individual agents and a small set of tasks. SAE features can be entangled, excessive steering can degrade outputs, and probe control can saturate. Better control of an LLM simulation also requires separate validation before drawing conclusions about human behavior. The contribution is a toolkit for inspecting and intervening on agents, with the choice of method guided by the research question.
