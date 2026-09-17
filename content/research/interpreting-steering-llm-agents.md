@@ -6,7 +6,7 @@ summary: "We compare prompting, sparse autoencoders, and linear probes for inter
 
 **Jiayue Gaveal Fan\*, Arul Murugan\*, Shreyas Krishnan, Abhishek Nagaraj** | UC Berkeley | February 2026
 
-*Preprint coming soon.*
+[Preprint on arXiv](https://arxiv.org/abs/2609.16436) | [PDF](https://arxiv.org/pdf/2609.16436)
 
 LLM-powered agents are becoming a serious tool for computational social science -- running simulated experiments at a fraction of the cost of human studies. But there's a fundamental problem: these agents are black boxes. Social scientists need two things from their experimental subjects: **interpretability** (why did the agent behave that way?) and **controllability** (can we reliably shift behavior along specific dimensions?). Prompting alone falls short on both counts.
 
