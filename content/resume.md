@@ -2,5 +2,6 @@
 title: "Resume"
 layout: "resume"
 url: "/resume/"
-summary: my resume
+summary: "Arul Murugan's resume. View or download the PDF."
+pdf: "/files/arul-cv.pdf"
 ---

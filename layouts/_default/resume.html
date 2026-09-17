@@ -1,0 +1,26 @@
+{{- define "main" }}
+{{- $pdf := .Params.pdf | relURL }}
+
+<article class="post-single">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+    <h1 class="post-title">{{ .Title }}</h1>
+  </header>
+  <div class="post-content">
+    <p>
+      <a href="{{ $pdf }}" target="_blank" rel="noopener">Open PDF</a>
+      &middot;
+      <a href="{{ $pdf }}" download="Arul_Murugan_CV.pdf">Download PDF</a>
+    </p>
+    <object
+      data="{{ $pdf }}#view=FitH"
+      type="application/pdf"
+      aria-label="Arul Murugan's resume"
+      style="width: 100%; height: 80vh; min-height: 500px; border: 1px solid var(--border); border-radius: var(--radius);"
+    >
+      <p>Your browser cannot display the PDF here. <a href="{{ $pdf }}">Open the resume PDF</a>.</p>
+    </object>
+  </div>
+</article>
+
+{{- end }}
