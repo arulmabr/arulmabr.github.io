@@ -17,7 +17,7 @@ params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Arul Murugan
   description: "Arul Murugan's personal website"
-  keywords: [Blog, Portfolio, PaperMod]
+  keywords: [Research, AI, Portfolio]
   author: Me
   # author: ["Me", "You"] # multiple authors
   images: ["/images/arul.jpg"]
@@ -73,7 +73,6 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Hi there \U0001F44B"
-    Content: Thanks for dropping by! I'm Arul Murugan, currently a masters student at UC Berkeley.
 
   socialIcons:
     - name: x
@@ -114,14 +113,6 @@ outputs:
     - JSON # necessary for search
 menu:
   main:
-    - identifier: about
-      name: About
-      url: /about/
-      weight: 10
-    - identifier: Blog
-      name: Blog
-      url: /blog/
-      weight: 20
     - identifier: research
       name: Research
       url: /research/

@@ -1,0 +1,11 @@
+{{- define "main" }}
+<article class="home-profile">
+  <header class="home-header">
+    <h1>{{ site.Params.homeInfoParams.Title | markdownify }}</h1>
+    {{- partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
+  </header>
+  <div class="post-content home-about">
+    {{ .Content }}
+  </div>
+</article>
+{{- end }}
