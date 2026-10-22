@@ -118,7 +118,7 @@ menu:
       url: /research/
       weight: 30
     - identifier: resume
-      name: Resume
+      name: CV
       url: /resume/
       weight: 40
       params:
