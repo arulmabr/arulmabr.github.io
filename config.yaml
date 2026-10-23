@@ -119,7 +119,7 @@ menu:
       weight: 30
     - identifier: resume
       name: CV
-      url: /resume/
+      url: /cv/
       weight: 40
       params:
         target: _blank
